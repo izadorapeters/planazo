@@ -1,0 +1,297 @@
+:root {
+  /* Paleta Colores */
+  --fondo-pagina: #f4f3ed;
+  --fondo-claro: #ffffff;
+  --fondo-oscuro: #0a1b18;
+
+  --texto-oscuro: #0a1b18;
+  --texto-negro: #0f1715;
+  --texto-claro: #ffffff;
+  --destaque: #eab308;
+
+  --boton-principal: #0a1b18;
+  --boton-secundario: #eab308;
+}
+
+/* Estilos base */
+body { 
+    margin: 0;
+    padding: 0;
+    background-color: var(--fondo-pagina);
+    color: var(--texto-negro);
+    font-family: 'poppins', sans-serif;
+}
+
+/* Textos */
+.titulo {
+  color: var(--texto-claro);
+  font-weight: 600;
+  font-size: 36px;
+}
+
+.subtitulo {
+  color: var(--texto-oscuro);
+  font-weight: 600;
+  font-size: 28px;
+}
+
+.sobretitulo {
+    color: var(--texto-oscuro);
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.destaque {
+    color: var(--destaque);
+}
+
+/* Botones */
+.boton-principal {
+  background-color: var(--boton-principal);
+  color: var(--texto-claro);
+}
+
+.boton-secundario {
+  background-color: var(--boton-secundario);
+  color: var(--fondo-oscuro);
+  padding: 10px 16px;
+  border-radius: 8px;
+  font-weight: 500;
+  display: inline-block;
+  text-decoration: none;
+  text-align: center;
+}
+
+/* HEADER */
+.header {
+    background-color: var(--fondo-claro);
+    padding: 15px 40px;
+}
+
+.header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    gap: 24px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-list a {
+    text-decoration: none;
+    color: var(--texto-oscuro);
+    font-weight: 500;
+}
+
+/* EXPERIENCIAS EN BUENOS AIRES (BANNER) */
+.banner {
+    background-image: url(./img/banner-principal.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #ffffff;
+    padding: 100px 40px;
+    text-align: left;
+}
+
+.banner a {
+    text-decoration: none;
+}
+
+/* SECCIONES GENERALES */
+main section {
+    padding: 60px 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* EXPLORÁ POR CATEGORÍA */
+.categoria-list {
+    list-style: none;
+    color: var(--texto-oscuro);
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    padding: 0;
+    margin: 30px 0;
+    flex-wrap: wrap;
+}
+
+.categoria-list li {
+    background-color: var(--fondo-claro);
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+    flex: 1;
+    min-width: 130px;
+    font-weight: 500;
+}
+
+.categoria-boton {
+    text-decoration: none;
+    color: var(--texto-oscuro); 
+    font-weight: 600;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+/* EXPERIENCIAS DESTACADAS */
+.experiencia-boton {
+    text-decoration: none;
+    color: var(--texto-oscuro);
+    font-weight: 600;
+    float: right;
+    margin-top: -40px;
+}
+
+.experiencia-list {
+    list-style: none;
+    display: flex;
+    gap: 24px;
+    padding: 0;
+    margin-top: 40px;
+} 
+
+.experiencia-list li {
+    background-color: var(--fondo-claro);
+    border-radius: 12px;
+    overflow: hidden;
+    width: 250px;
+    padding-bottom: 20px;
+}
+
+.experiencia-list img {
+    width: 100%;
+    height: 150px;
+    display: block;
+}
+
+/* Estilos para el título, precio y botón dentro de las tarjetas */
+.experiencia-list h3 {
+    font-size: 16px;
+    color: var(--texto-oscuro);
+    padding: 0 15px;
+    margin: 15px 0 5px 0;
+}
+
+.experiencia-list p {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--texto-oscuro);
+    padding: 0 15px;
+    margin: 0 0 15px 0;
+}
+
+.experiencia-list .boton-secundario {
+    margin: 0 15px;
+    display: block;
+}
+
+/* CÓMO FUNCIONA */
+.como-funciona {
+    background-color: var(--fondo-oscuro);
+    padding: 80px 40px;
+}
+
+.como-funciona .sobretitulo,
+.como-funciona .subtitulo,
+.como-funciona .texto-claro {
+    color: var(--texto-claro);
+    text-align: center;
+}
+
+.como-funciona .sobretitulo {
+    color: var(--destaque);
+    text-transform: uppercase;
+}
+
+.como-funciona-boton {
+    text-decoration: none;
+    color: var(--fondo-oscuro);
+    background-color: var(--destaque);
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-weight: 600;
+    display: block;
+    width: max-content;
+    margin: 20px auto 40px auto;
+} 
+
+.como-funciona-list {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.como-funciona-list li {
+    background-color: var(--texto-oscuro);
+    padding: 30px;
+    border-radius: 12px;
+    flex: 1;
+}
+
+.como-funciona-list .subtitulo {
+    font-size: 20px;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.como-funciona-list .texto-claro {
+    text-align: left;
+    font-size: 15px;
+}
+
+/* FOOTER */
+.footer {
+    background-color: var(--fondo-oscuro);
+    padding: 40px;
+    text-align: center;
+}
+
+.fotter-texto {
+    color: var(--texto-claro);
+    margin: 10px 0;
+    font-size: 14px;
+}
+
+/* RESPONSIVO PARA CELULAR */
+@media (max-width: 600px) {
+
+    .header nav {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .nav-list {
+        flex-direction: column;
+        gap: 12px;
+        margin-top: 15px;
+    }
+
+    .banner {
+        padding: 40px 20px;
+        text-align: center;
+    }
+
+    main section {
+        padding: 40px 20px;
+    }
+
+    .categoria-list {
+        flex-direction: column;
+    }
+
+    .categoria-list li {
+        width: 100%;
+        margin-bottom: 10px;
